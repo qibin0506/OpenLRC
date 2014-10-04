@@ -5,7 +5,9 @@ a lrc view for android
 一个可以在android下显示歌词的控件
 可以设置歌词字体大小，当前行歌词的颜色、其他行歌词的颜色、行间距等。
 
-![image](https://github.com/qibin0506/OpenLRC/tree/master/show/show.jpg)
+
+![image](https://github.com/qibin0506/OpenLRC/blob/master/show/show.png)
+
 
 使用方法：
 
