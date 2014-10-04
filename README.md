@@ -5,36 +5,37 @@ a lrc view for android
 一个可以在android下显示歌词的控件
 可以设置歌词字体大小，当前行歌词的颜色、其他行歌词的颜色、行间距等。
 
+![image](https://github.com/qibin0506/OpenLRC/blob/master/show/show.jpg)
 
 使用方法：
 
   1、xml布局：
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:lrc="http://schemas.android.com/apk/res/org.load.lrcviewtest"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity"
-    android:background="@android:color/black" >
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:lrc="http://schemas.android.com/apk/res/org.load.lrcviewtest"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".MainActivity"
+	android:background="@android:color/black" >
 
-    <org.load.openlrc.LrcView
-        android:id="@+id/lrc"
-        android:layout_marginTop="100dip"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@android:color/white"
-        lrc:currentTextColor="@android:color/holo_orange_light"
-        lrc:normalTextColor="@android:color/white"
-        lrc:rows="5"
-        lrc:textSize="20sp"
-        lrc:dividerHeight="10dip" />
-    
+	<org.load.openlrc.LrcView
+		android:id="@+id/lrc"
+		android:layout_marginTop="100dip"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@android:color/white"
+		lrc:currentTextColor="@android:color/holo_orange_light"
+		lrc:normalTextColor="@android:color/white"
+		lrc:rows="5"
+		lrc:textSize="20sp"
+		lrc:dividerHeight="10dip" />
+	
 </LinearLayout>
 
   2、在activity中使用：
-    
-    public class MainActivity extends Activity {
+	
+	public class MainActivity extends Activity {
 	private LrcView mLrc;
 	private MediaPlayer mPlayer;
 	private String mDir = Environment.getExternalStorageDirectory() + File.separator + "Download" + File.separator;
