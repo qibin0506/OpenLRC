@@ -1,6 +1,7 @@
 OpenLRC
 =======
-a lrc view for android
+##注意：新版本的控件支持歌词的滑动
+[可以到这里下载](https://git.oschina.net/qibin/LitePlayer)##
 
 一个可以在android下显示歌词的控件
 可以设置歌词字体大小，当前行歌词的颜色、其他行歌词的颜色、行间距等。
